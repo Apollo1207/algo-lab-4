@@ -19,8 +19,7 @@ def search_min_count(binary_number, number):
     for i in range(len(binary_number)):
         if len(powers[i]) >= len(binary_number):
             break
-        a = bin(number ** (i + 1))[2:]
-        powers.append(a)
+        powers.append(bin(number ** (i + 1))[2:])
     powers.reverse()
 
     for power in powers:
